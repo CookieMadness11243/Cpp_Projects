@@ -1,0 +1,3 @@
+C:/Users/cooki/OneDrive/سطح المكتب/Folders/Work/Programming/C++ Projects/Student DataBase/cmake-build-debug/CMakeFiles/Student_DataBase.dir
+C:/Users/cooki/OneDrive/سطح المكتب/Folders/Work/Programming/C++ Projects/Student DataBase/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cooki/OneDrive/سطح المكتب/Folders/Work/Programming/C++ Projects/Student DataBase/cmake-build-debug/CMakeFiles/rebuild_cache.dir
