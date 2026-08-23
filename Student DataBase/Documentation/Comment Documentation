@@ -1,0 +1,60 @@
+
+// First i implemented the libraries needed
+
+#include <iostream>
+#include <string>
+#include <map>
+#include <iomanip>
+
+// A Class to apply the info i needed for students
+class StudentInfo{
+	public:
+		std::string Name;
+		std::string Class;
+		int Grade;
+
+		std::string ID; // Depends on Student Class and Name
+
+};
+
+void input(char key, bool &loop);
+
+int main(){
+	char key;
+
+// the loop itself for the DB
+
+	bool loop = true;
+	while (loop){
+		std::cout<<"input: e{exit} a{add} v{view} d{edit}: "; std::cin>>key;
+		input(key, loop);
+
+		loop = false;
+	}
+
+	return 0;
+}
+
+
+
+// A function
+void input(char key, bool &loop){
+	char Lkey = tolower(key);
+
+
+// each key has it's own idea so e for exit and a for add
+	if (Lkey == 'e'){
+		loop = false;
+
+// here the code is a bit messy, for some reason the setw() doesn't work? idk, but I'm trying to fix it currently
+	}else if(Lkey == 'a'){
+		StudentInfo Student;
+		std::cout<<std::endl<<"Enter The mentioned Info: "<<std::endl;
+		std::cout<<"Name"<<std::setw(20); std::cout<<"Class"<<std::setw(20); std::cout<<"Grade"<<std::setw(20)<<std::endl;
+
+		std::cin>>Student.Name; std::cout<<"\x1b[A";
+		std::cin>>Student.Class; std::cout<<"";
+		std::cin>>Student.Grade;
+
+	}
+}
