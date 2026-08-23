@@ -1,50 +1,39 @@
-#include <iostream>
-#include <string>
-#include <map>
-#include <iomanip>
+// Status: Still working on it, and I'll keep updating it till it has it's own GUI 👍
 
+first i included the libraries needed like the
+iostream, vector, map (In case of Dictionaries), and string
+
+then i applied the class:
 class StudentInfo{
 	public:
+		// here i added the following info required to add:
 		std::string Name;
 		std::string Class;
 		int Grade;
 
-		std::string ID; // Depends on Student Class and Name
+		std::string ID; // the ID is automatically applied depending on the Class And Seat
 
-};
-
-void input(char key, bool &loop);
-
-int main(){
-	char key;
-	
-	bool loop = true;
-	while (loop){
-		std::cout<<"input: e{exit} a{add} v{view} d{edit}: "; std::cin>>key;
-		input(key, loop);
-
-		loop = false;
-	}
-
-	return 0;
 }
 
+then the main code:
+char key; // here the use inputs a key
 
+while (loop){
+	// the DB loop
 
+	input(key, loop);
+
+}
+
+// the functions (here Problems start to happen)
 
 void input(char key, bool &loop){
-	char Lkey = tolower(key);
+	char Lkey = tolower(key); // In case uppercase letters
 
 	if (Lkey == 'e'){
-		loop = false;
+		loop = false; // To leave
 	}else if(Lkey == 'a'){
-		StudentInfo Student;
-		std::cout<<std::endl<<"Enter The mentioned Info: "<<std::endl;
-		std::cout<<"Name"<<std::setw(20); std::cout<<"Class"<<std::setw(20); std::cout<<"Grade"<<std::setw(20)<<std::endl;
-
-		std::cin>>Student.Name; std::cout<<"\x1b[A";
-		std::cin>>Student.Class; std::cout<<"";
-		std::cin>>Student.Grade;
-
+		// here all the problems start to happen
 	}
+
 }
