@@ -3,7 +3,7 @@
 first i included the libraries needed like the
 iostream, vector, map (In case of Dictionaries), and string
 
-then i applied the class:
+```then i applied the class:
 class StudentInfo{
 	public:
 		// here i added the following info required to add:
@@ -14,8 +14,8 @@ class StudentInfo{
 		std::string ID; // the ID is automatically applied depending on the Class And Seat
 
 }
-
-then the main code:
+```
+```then the main code:
 char key; // here the use inputs a key
 
 while (loop){
@@ -24,7 +24,8 @@ while (loop){
 	input(key, loop);
 
 }
-
+```
+```
 // the functions (here Problems start to happen)
 
 void input(char key, bool &loop){
@@ -37,3 +38,4 @@ void input(char key, bool &loop){
 	}
 
 }
+```
