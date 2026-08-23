@@ -1,3 +1,5 @@
+state of project: yet imcomplete, but has some features going on
+
 i wanted something simple to make as my first project in c++
   so i found the idea from geeks for geeks website
 
