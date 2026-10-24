@@ -1,3 +1,5 @@
+# FIRST BIG PROJECT
+
 // Status: Still working on it, and I'll keep updating it till it has it's own GUI 👍
 
 first i included the libraries needed like the
